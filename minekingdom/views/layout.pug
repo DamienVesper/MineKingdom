@@ -1,0 +1,33 @@
+doctype html
+<html lang="en">
+  head
+    title= title
+
+    link(rel="icon", href="/images/icon.png")
+    link(rel="stylesheet", href="/stylesheets/style.css")
+    script(src="/javascripts/ssl.js")
+    script(src="/javascripts/nav.js")
+  body
+    header
+      <nav>
+          <img src="./images/icon.png" alt="MineKingdom logo" class="logo">
+          <ul class="left">
+              <li><a href="/"><span>Home</span></a></li>
+              <li><a href="/about"><span>About Us</span></a></li>
+              <li><a href="/docs"><span>Documentation</span></a></li>
+              <li><a href="/team"><span>Meet the Team</span></a></li>
+              <li><a href="/contact"><span>Contact</span></a></li>
+          </ul>
+          <ul class="right">
+              <li><a href="https://discordapp.com/oauth2/authorize?client_id=627332767461670941&scope=bot&permissions=388161"><span>Invite</span></a></li>
+              <li><a href="https://top.gg/bot/627332767461670941/vote"><span>Upvote</span></a></li>
+              //- <li><a href="https://discordapp.com/api/oauth2/authorize?client_id=627332767461670941&redirect_uri=https%3A%2F%2Fminekingdom.io%2F&response_type=code&scope=identify%20email"><span>Login</span></a></li>
+              <li><a href="https://discord.gg/BajXaQr"><span>Discord</span></a></li>
+          </ul>
+      </nav>
+    main
+      .app
+        block content
+    footer
+      span.copyright-notice &copy; MineKingdom 2020. All rights reserved.
+</html>
