@@ -1,16 +1,11 @@
 extends layout
 
 block content
-    link(rel="stylesheet", href="/stylesheets/pages/docs.css")
+    link(rel="stylesheet", href="/stylesheets/pages/commands.css")
 
-    <h1 class="page-title">Documentation</h1>
+    <h1 class="page-title">Commands</h1>
     <div class="cmd-aria">
-        <h2 id="">category_name</h2>
-        <div class="ccontainer" id="boost">
-            <h3 class="cname">m!boost</h3>
-            <span class="cdesc">Display MineKingdom server boosts.</span>
-            <div class="aliases">Aliases:<span>N/A</span></div>
-        </div>
+        <h2 id="profile">Profile Commands</h2>
         <div class="ccontainer" id="inventory">
             <h3 class="cname">m!inventory</h3>
             <span class="cdesc">Display your inventory.</span>
@@ -24,6 +19,11 @@ block content
             <span class="cdesc">Display your profile.</span>
             <div class="aliases">Aliases:<span>m!p</span></div>
         </div>
+        <div class="ccontainer" id="trade">
+            <h3 class="cname">m!trade &lt;user&gt; &lt;sellItem&gt; &lt;wantItem&gt;</h3>
+            <span class="cdesc">Trade with a user.</span>
+            <div class="aliases">Aliases:<span>N/A</span></div>
+        </div>
         <div class="ccontainer" id="tribe">
             <h3 class="cname">m!tribe</h3>
             <span class="cdesc">Display Tribe info.</span>
@@ -34,6 +34,7 @@ block content
             <span class="cdesc">Display your statistics.</span>
             <div class="aliases">Aliases:<span>m!s</span></div>
         </div>
+        <h2 id="action">Action Commands</h2>
         <div class="ccontainer" id="shop">
             <h3 class="cname">m!shop</h3>
             <span class="cdesc">Display the shop.</span>
@@ -54,6 +55,16 @@ block content
             <span class="cdesc">Repair your pickaxe with an anvil.</span>
             <div class="aliases">Aliases:<span>N/A</span></div>
         </div>
+        <div class="ccontainer" id="pickinfo">
+            <h3 class="cname">m!pickinfo</h3>
+            <span class="cdesc">View pickaxe info.</span>
+            <div class="aliases">Aliases:<span>N/A</span></div>
+        </div>
+        <div class="ccontainer" id="pickaxe">
+            <h3 class="cname">m!pickaxe</h3>
+            <span class="cdesc">View your pickaxes.</span>
+            <div class="aliases">Aliases:<span>m!picks</span></div>
+        </div>
         <div class="ccontainer" id="mine">
             <h3 class="cname">m!mine</h3>
             <span class="cdesc">Mine ores.</span>
@@ -62,6 +73,12 @@ block content
         <div class="ccontainer" id="chest">
             <h3 class="cname">m!chest</h3>
             <span class="cdesc">Get your daily chest!</span>
+            <div class="aliases">Aliases:<span>N/A</span></div>
+        </div>
+        <h2 id="other">Other Commands</h2>
+        <div class="ccontainer" id="boost">
+            <h3 class="cname">m!boost</h3>
+            <span class="cdesc">Display MineKingdom server boosts.</span>
             <div class="aliases">Aliases:<span>N/A</span></div>
         </div>
         <div class="ccontainer" id="botinfo">

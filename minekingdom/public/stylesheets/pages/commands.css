@@ -1,3 +1,10 @@
+.cmd-aria h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    padding-bottom: 7.5px;
+    border-bottom: 2px solid #000;
+}
 .cmd-aria .ccontainer {
     display: block;
     width: 100%;
