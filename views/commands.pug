@@ -1,0 +1,42 @@
+extends layout
+
+mixin cmd(name, aliases, desc)
+    - let apug;
+    - if(!aliases) apug = `N/A`;
+    - else if(aliases.length == 1) apug = `<code>${apug}</code>`;
+
+    .ccontainer#[name]
+        h3.cname= "m!" + name
+        span.cdesc= desc
+        .aliases= apug
+    
+block append head
+    link(rel="stylesheet", href="/stylesheets/pages/commands.css")
+block app
+    h2#profile Profile Commands
+    +cmd(`inventory`, [`i`, `inv`], `inventory`, `Display your inventory.`)
+    +cmd(`profile`, [`p`], `profile`,`Display your profile.`)
+    +cmd(`trade`, null, `trade <user> <sellItem> <wantItem>`,`Trade with a user.`)
+    +cmd(`tribe`, null, `tribe`, `Display tribe info.`)
+    +cmd(`stats`, [`s`], `stats`, `Display your statistics.`)
+    +cmd(`shop`, null, `shop`, `Display the shop.`)
+    +cmd(`start`, null, `create`,`Create your MineKing account.`)
+    +cmd(`sell`, null, `sell [all | ore] [count]`, `Sell your ore!`)
+    +cmd(`repair`, null, `repair`, `Repair your pickaxe.`)
+    +cmd(`pickinfo`, null, `pickinfo`, `View pickaxe info.`)
+    +cmd(`pickaxes`, null, `pickaxes`, `View your pickaxes.`)
+    +cmd(`mine`, [`m`], `mine`, `Mine ores.`)
+    +cmd(`chest`, [`daily`], `chest`, `Get your daily chest!`)
+
+    h2#other Other Commands
+    +cmd(`boost`, null, `boost`, `Display MineKingdom server boosts.`)
+    +cmd(`botinfo`, null, `botinfo`, `Get information about the bot!`)
+    +cmd(`donate`, null, `donate`, `Donate to the bot to get some juicy perks!`) 
+    +cmd(`drink`, null, `drink`, `Drink liquids.`)
+    +cmd(`eat`, null, `eat`, `Eat foodstuffs.`)
+    +cmd(`help`, null, `help`, `View the help menu.`)
+    +cmd(`hunt`, null, `hunt`, `Hunt for foodstuffs!`)
+    +cmd(`invite`, null, `invite`, `Invite the bot to your server!`)
+    +cmd(`support`, null, `support`, `Join the support server!`)
+    +cmd(`leaderboard`, [`lb`], `leaderboard`, `View leaderboards for the current guild.`)
+    +cmd(`ping`, null, `ping`, `View the latency between Discord and the bot.`)

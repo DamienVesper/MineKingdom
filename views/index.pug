@@ -1,0 +1,19 @@
+extends layout
+
+block append head
+    link(rel="stylesheet", href="/stylesheets/pages/index.css")
+    script(src="/javascripts/pages/index.js")
+block app
+    .info-buttons
+        .button-area
+            button
+                img(src="/images/icon-bot.png", alt="Invite logo")
+                span Invite
+        .button-area
+            button
+                img(src="/images/icon-bot.png", alt="Vote logo")
+                span Vote
+        .button-area
+            button
+                img(src="/images/icon-bot.png", alt="Support logo")
+                span Support

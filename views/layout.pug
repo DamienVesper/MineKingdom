@@ -1,0 +1,49 @@
+doctype html
+<html lang="en">
+  block head
+    title= (title || '404') + ' | MineKingdom'
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    
+    meta(name="title" content="MineKingdom")
+    meta(name="description" content="Discord Miner is a creative economy and mining simulation bot where you can mine ores to gain money to craft better tools and earn rewards!")
+
+    meta(property="og:title" content="MineKingdom")
+    meta(property="og:description" content="Discord Miner is a creative economy and mining simulation bot where you can mine ores to gain money to craft better tools and earn rewards!")
+
+    link(rel="icon", href="/images/icon.png")
+    link(rel="stylesheet", href="/stylesheets/style.css")
+    script(src="/javascripts/ssl.js")
+    script(src="/javascripts/nav.js")
+  body
+    block header
+      nav
+        img(src="./images/icon.png", alt="MineKingdom logo").logo
+        ul.left
+          li
+            a(href="/")
+              span Home
+            a(href="/about")
+              span About
+            a(href="/commands")
+              span Commands
+            a(href="/team")
+              span Meet the Team
+            a(href="/contact")
+              span Contact
+        ul.right
+          li
+            a(href="https://discordapp.com/oauth2/authorize?client_id=627332767461670941&scope=bot&permissions=388161")
+              span Invite
+            a(href="https://top.gg/bot/627332767461670941/vote")
+              span Upvote
+            a(href="https://discord.gg/BajXaQr")
+              span Discord
+          </ul>
+      </nav>
+    main
+      .app
+        block app
+    block footer
+      span.copyright-notice &copy; MineKingdom 2020. All rights reserved.
