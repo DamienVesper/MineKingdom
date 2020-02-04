@@ -1,13 +1,14 @@
 extends layout
 
-mixin cmd(name, aliases, desc)
+mixin cmd(name, aliases, usage, desc)
     - let apug;
     - if(!aliases) apug = `N/A`;
-    - else if(aliases.length == 1) apug = `<code>${apug}</code>`;
+    - else apug = `m!` + aliases.join(`, m!`);
 
-    .ccontainer#[name]
-        h3.cname= "m!" + name
+    .ccontainer#apug
+        h3.cname= `m!` + name
         span.cdesc= desc
+        span.cusage= `Usage: m!${usage}`
         .aliases= apug
     
 block append head
