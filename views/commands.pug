@@ -5,11 +5,11 @@ mixin cmd(name, aliases, usage, desc)
     - if(!aliases) apug = `N/A`;
     - else apug = `m!` + aliases.join(`, m!`);
 
-    .ccontainer#apug
+    .ccontainer
         h3.cname= `m!` + name
         span.cdesc= desc
         span.cusage= `Usage: m!${usage}`
-        .aliases= apug
+        .aliases= `Aliases: ${apug}`
     
 block append head
     link(rel="stylesheet", href="/stylesheets/pages/commands.css")

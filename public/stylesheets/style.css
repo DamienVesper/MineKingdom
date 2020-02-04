@@ -68,8 +68,7 @@ main .app {
     background-color: #fff;
     box-shadow: #fff 0px 0px 15px;
     padding: 8px;
-    border-radius: 16px;
-    color: #000;
+    border-radius: 5px;
 }
 .app .page-title {
     display: flex;
